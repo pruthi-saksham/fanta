@@ -341,3 +341,166 @@ body::-webkit-scrollbar {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     transform: translate(-50%,0) scale(1.01);
 }
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #main nav {
+        padding: 0 5vw;
+    }
+
+    #main nav #center-part {
+        gap: 20px;
+    }
+
+    #main nav #center-part a {
+        font-size: 1.5vw;
+    }
+
+    #main nav #right-part input {
+        font-size: 1.5vw;
+    }
+
+    #main #page1 h1 {
+        font-size: 25vw;
+    }
+
+    #main #page1 #fanta {
+        width: 50%;
+    }
+
+    #main #page3 .card {
+        width: 30%;
+        height: 70vh;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    #main nav {
+        height: 8vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    #main nav img {
+        height: 40%;
+    }
+
+    #main nav #center-part {
+        gap: 10px;
+    }
+
+    #main nav #center-part a {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    #main nav #right-part {
+        display: none; /* Hide search on mobile for cleaner look */
+    }
+
+    #main #page1 h1 {
+        font-size: 30vw;
+    }
+
+    #main #page1 #fanta {
+        width: 70%;
+        top: 30%;
+    }
+
+    #main #page1 #half-orange {
+        width: 25%;
+        left: 10%;
+    }
+
+    #main #page1 #oranges {
+        width: 25%;
+        right: 10%;
+    }
+
+    #main #page1 #leaf {
+        width: 20%;
+        left: 5%;
+    }
+
+    #main #page1 #coco-leaf {
+        width: 40%;
+    }
+
+    #main #page2 {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    #main #page2 .container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #main #page2 .container svg {
+        margin-top: 5vh;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #main #page2 #right {
+        padding: 0 10vw;
+        height: auto;
+    }
+
+    #main #page2 #right h1 {
+        margin-top: 0;
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #main #page2 #right p {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #main #page3 {
+        flex-direction: column;
+        padding: 100px 0;
+        height: auto;
+    }
+
+    #main #page3 .card {
+        width: 80%;
+        height: 60vh;
+        margin-bottom: 50px;
+    }
+
+    #main #page3 .card p {
+        width: 70%;
+        font-size: 14px;
+        bottom: 25%;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    #main #page1 h1 {
+        font-size: 35vw;
+    }
+
+    #main #page1 #fanta {
+        width: 85%;
+    }
+
+    #main #page3 .card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanta — Feel the Fizz</title>
+  <meta name="description" content="Fanta — bold fruit flavours with a signature tropical fizz. Explore Orange, Grape, Lemon & Strawberry.">
+  <link rel="preload" href="/Font/Product Sans Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/Img/Logo.webp" type="image/x-icon">
+  <script type="module" crossorigin src="/assets/index-DatnfkZN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CNlGfsCY.css">
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- ── Navigation ──────────────────────────────────────── -->
+    <nav id="navbar">
+      <img src="/Img/Logo.webp" alt="Fanta Logo" id="nav-logo">
+
+      <!-- Desktop links -->
+      <div id="center-part">
+        <a href="#page1">Product</a>
+        <a href="#page2">Brands</a>
+        <a href="#page3">Shop</a>
+        <a href="">Investors</a>
+      </div>
+
+      <div id="right-part">
+        <input id="search-box" type="text" placeholder="Search flavours…" autocomplete="off">
+        <button id="cart-btn" aria-label="Open cart">
+          <!-- Shopping bag icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span id="cart-badge" class="hidden">0</span>
+        </button>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button id="hamburger" aria-label="Toggle menu">☰</button>
+
+      <!-- Mobile dropdown menu -->
+      <div id="mobile-menu">
+        <a href="#page1">Product</a>
+        <a href="#page2">Brands</a>
+        <a href="#page3">Shop</a>
+        <a href="">Investors</a>
+      </div>
+    </nav>
+
+    <!-- ── Page 1 — Hero ────────────────────────────────────── -->
+    <div id="page1">
+      <h1>FANTA</h1>
+      <img src="/Img/orange2_compressed.webp" alt="" loading="lazy" id="half-orange">
+      <img id="fanta" src="/Img/fanta.webp" alt="Fanta bottle">
+      <img src="/Img/orange_compressed.webp" loading="lazy" alt="" id="oranges">
+      <img src="/Img/leaf.webp" loading="lazy" alt="" id="leaf">
+      <img src="/Img/leaf2_compressed.webp" alt="" id="leaf2">
+      <img src="/Img/coconoutleaf.webp" loading="lazy" alt="" id="coco-leaf">
+
+      <!-- Flavour Switcher pills -->
+      <div id="flavour-pills">
+        <button class="flavour-pill active" data-flavour="orange">🍊 Orange</button>
+        <button class="flavour-pill" data-flavour="grape">🍇 Grape</button>
+        <button class="flavour-pill" data-flavour="lemon">🍋 Lemon</button>
+        <button class="flavour-pill" data-flavour="strawberry">🍓 Strawberry</button>
+      </div>
+
+      <!-- Scroll cue -->
+      <div id="scroll-cue">
+        <span>Scroll</span>
+        <div class="chevron"></div>
+      </div>
+    </div>
+
+    <!-- ── Page 2 — About ────────────────────────────────────── -->
+    <div id="page2">
+      <div class="container">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path id="blob-shape" fill="#F1C21B"
+            d="M49.2,-39.9C62,-36.5,69.1,-18.3,71.2,2.1C73.3,22.4,70.3,44.9,57.6,54.1C44.9,63.3,22.4,59.3,1.7,57.7C-19.1,56,-38.2,56.6,-47.9,47.4C-57.7,38.2,-58.2,19.1,-55.1,3.1C-52,-12.9,-45.3,-25.7,-35.5,-29.1C-25.7,-32.5,-12.9,-26.5,2.7,-29.2C18.3,-31.9,36.5,-43.4,49.2,-39.9Z"
+            transform="translate(100 100)" />
+        </svg>
+      </div>
+      <div id="right" class="container">
+        <h1>FLAVOUR CHANGED</h1>
+        <p>Born from real fruit flavours, Fanta is the brand that believes fun shouldn't have limits. From the iconic
+          orange to tropical twists, every sip is a burst of bold, effervescent flavour crafted to spark your sense of
+          adventure. Feel the fizz, taste the fun.</p>
+      </div>
+    </div>
+
+    <!-- ── Page 3 — Products ─────────────────────────────────── -->
+    <div id="page3">
+
+      <div class="card" data-product="sprite" data-price="1.99">
+        <img class="main-img1" src="/Img/Sprite.webp" loading="lazy" alt="Sprite bottle">
+        <img src="/Img/lemon_compressed.webp" loading="lazy" alt="" class="bg-img1">
+        <p>Crisp lemon-lime fizz that cuts right through the heat.</p>
+        <button class="buy-btn" data-product="sprite">BUY NOW</button>
+      </div>
+
+      <div class="card fanta-card" data-product="fanta" data-price="1.99">
+        <p>Bold orange flavour with a signature tropical fizz.</p>
+        <button class="buy-btn" data-product="fanta">BUY NOW</button>
+      </div>
+
+      <div class="card" data-product="mango" data-price="1.99">
+        <img class="main-img3" src="/Img/mangoJuice_compressed.webp" loading="lazy" alt="Mango Juice bottle">
+        <img src="/Img/mango_compressed.webp" loading="lazy" alt="" class="bg-img3">
+        <p>Sun-ripened mango goodness in every golden sip.</p>
+        <button class="buy-btn" data-product="mango">BUY NOW</button>
+      </div>
+
+    </div>
+  </div><!-- /#main -->
+
+  <!-- ── Cart Overlay + Drawer ─────────────────────────────── -->
+  <div id="cart-overlay"></div>
+
+  <div id="cart-drawer">
+    <div id="cart-header">
+      <h2>Your Cart 🛒</h2>
+      <button id="cart-close" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div id="cart-footer">
+      <p id="cart-total">Total: $0.00</p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- ── Toast ─────────────────────────────────────────────── -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+</body>
+
+</html>
